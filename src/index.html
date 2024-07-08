@@ -9,6 +9,46 @@
     <title>Vite Template</title>
   </head>
   <body>
+    <button id="addItemButton">Añadir Elementos</button>
+    <ul id="itemList">
+      <li>Item 1</li>
+    </ul>
+    <div>
+      <label>1</label>
+      <input type="range" id="range" min="1" max="6" step="1" value="1" /> //
+      <button id="generateHeaderButton">Generar Encabezado</button>
+    </div>
+    <div id="headersContainer"></div>
+    <h1>Posts</h1>
+    <h2>Post de ejemplo</h2>
+    <!-- Contenedor de posts -->
+    <div id="postsContainer">
+      <!-- Post independiente -->
+      <div>
+        <h2>Nuevo post</h2>
+        <span>Author: Dorian</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <!-- Fin del post independiente -->
+    </div>
+    <!-- Fin del contenedor de posts -->
+
+    <form id="postForm">
+      <div>
+        <label>Title</label>
+        <input type="text" id="titleInput" />
+      </div>
+      <div>
+        <label>Author</label>
+        <input type="text" id="authorInput" />
+      </div>
+      <div>
+        <label>Message:</label>
+        <textarea id="messageInput"></textarea>
+      </div>
+      <button type="button" id="sendPostButton">Send Post</button>
+    </form>
+
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
